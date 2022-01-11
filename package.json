@@ -2,10 +2,10 @@
   "name": "magicApi",
   "version": "1.0.0",
   "description": "",
-  "main": "./lib/index.ts",
+  "main": "./src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.ts"
+    "start": "nodemon  -r dotenv/config server.ts"
   },
   "keywords": [],
   "author": "",
@@ -13,9 +13,11 @@
   "dependencies": {
     "@types/express": "^4.17.13",
     "@types/node": "^17.0.8",
+    "dotenv": "^10.0.0",
     "express": "^4.17.2",
     "http": "0.0.1-security",
-    "https": "^1.0.0"
+    "https": "^1.0.0",
+    "jsonwebtoken": "^8.5.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.15",
