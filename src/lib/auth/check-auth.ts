@@ -1,5 +1,4 @@
 const jwt = require('jsonwebtoken')
-require('dotenv')
 
 const token: typeof jwt = jwt.sign({
     data: 'foobar'
