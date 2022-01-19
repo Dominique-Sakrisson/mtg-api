@@ -1,4 +1,4 @@
-import { Router } from 'express'
+import { Router, NextFunction, Response, Request } from "express";
 import token from '../auth/check-auth'
 
 module.exports = Router()

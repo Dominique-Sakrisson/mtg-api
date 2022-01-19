@@ -1,4 +1,4 @@
-import app from './src/index'
+import app from './index'
 import http from 'http'
 
 const server: http.Server = http.createServer(app);
