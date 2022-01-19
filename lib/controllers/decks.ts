@@ -5,7 +5,8 @@ const Deck = require('../models/Deck')
 module.exports = Router()
 .get('/', async (req: Request, res: Response, next: NextFunction) => {
     console.log('get deckid hit');
-       
+    const allDecks = await Deck.getAll();
+       res.send(allDecks)
 })
 .post('/', async (req: Request, res: Response, next: NextFunction) => {
     console.log('post deckid hit');
