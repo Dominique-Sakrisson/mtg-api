@@ -4,5 +4,6 @@ module.exports = async (pool) => {
     const sqlQueries = await fs.readFile(`${__dirname}/../sql/setup.sql`, {
         encoding: 'utf-8'
     });
-    pool.query(sqlQueries);
+    console.log(pool, 'setup file');
+    return pool.query(sqlQueries);
 }
